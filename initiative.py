@@ -96,7 +96,7 @@ class Wind:
         self.battle_button.grid(row=0,column=2)
 
     def populate_list(self):   
-        for player in self.players.values():
+        for player in range(self.players):
             player.canvas = Canvas(self.player_canvas)
             self.player_canvas.create_window(0,0,window=player.canvas)
             name=Label(player.canvas,text=player.name)
