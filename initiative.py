@@ -126,7 +126,7 @@ class Wind:
         celer = int(self.celer_entry.get())
         self.players.append(Player(name,dex,wits,celer,self))
         self.populate_list()
-        print(self.players) # this is to test add button
+        # print(self.players) # this is to test add button
         # print(self.players['Jon'].initiative)
 
 
@@ -157,7 +157,7 @@ class Wind:
             break4L = Label(self.players[i].canvas, text = break1)
             break5L = Label(self.players[i].canvas, text = break1)
 
-            if self.players[i].initiative > 50:
+            if self.players[i].initiative >= 50:
                 self.players[i].canvas.configure(background='green')
             
             pname=Label(self.players[i].canvas, text = player_name)
