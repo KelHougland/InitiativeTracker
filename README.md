@@ -1,0 +1,1 @@
+This program is an initiative tracker for a table top rpg system that determines player turn order. The coding is done with Python using TKinter to generate the UI and Pyinstaller to turn it into an executable file.
